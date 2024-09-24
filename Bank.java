@@ -165,16 +165,7 @@ class CorporateHolder extends AccountHolder {
 
 public class Bank {
    public static void main(String[] args) {
-	   // Creates an IndividualHolder
-	   AccountHolder smith = new IndividualHolder(300921, "16 Penn Ave, Washington DC", "Bill Smith", "111-22-3333");
-	   Account checking = new Account(19.32, smith, Currency.USD);
-	   Account savings = new Account(200.50, smith, Currency.USD); // Implemented the currency and the type as well
-	   smith.add(checking); // Adds accounts to the holder
-	   smith.add(savings);
-	   
-	   System.out.println("Checking Account Balance: " + checking.getBalance() + " " + checking.getcurrency());
-	   System.out.println("Savings Account Balance: " + savings.getBalance() + " " + savings.getcurrency() + "\n");
-	   
+
 	     // Creating 5 IndividualHolders
        IndividualHolder holder1 = new IndividualHolder(1, "123 Main St", "John Johnson", "111-11-1111");
        IndividualHolder holder2 = new IndividualHolder(2, "456 Elm St", "Jane Dillon", "222-22-2222");
